@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitatie la botez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="invitation-shell">
+    <section class="photo-panel" aria-label="Fotografia cuplului">
+      <div class="photo-placeholder" id="photoPlaceholder" hidden>
+        <span class="placeholder-mark">+</span>
+        <span>Incarca fotografia voastra</span>
+      </div>
+      <img id="couplePhoto" class="couple-photo" src="WhatsApp%20Image%202026-03-10%20at%2021.00.25.jpeg" alt="Fotografia voastra">
+      <label class="photo-upload">
+        <span>Schimba fotografia</span>
+        <input id="photoInput" type="file" accept="image/*">
+      </label>
+      <div class="photo-caption">O zi mica. O iubire imensa.</div>
+    </section>
+
+    <section class="details-panel">
+      <div class="topline"><span></span><span class="cross">+</span><span></span></div>
+      <p class="eyebrow">Cu dragoste si recunostinta</p>
+      <h1>Te invitam la<br><em>botezul</em> Elenei</h1>
+      <p class="intro">Ingerasul nostru face primul pas in lume, iar bucuria noastra ar fi deplina sa ne fii alaturi in aceasta zi binecuvantata.</p>
+
+      <div class="baby-name" contenteditable="true" spellcheck="false">Elena Maria</div>
+      <p class="date-line" contenteditable="true" spellcheck="false">Duminica, 11 octombrie 2026</p>
+
+      <div class="event-grid">
+        <div class="event-item">
+          <span class="event-label">Ceremonia religioasa</span>
+          <strong contenteditable="true" spellcheck="false">Biserica Sf. Nicolae</strong>
+          <span contenteditable="true" spellcheck="false">Ora 12:30</span>
+        </div>
+        <div class="event-item">
+          <span class="event-label">Petrecerea</span>
+          <strong contenteditable="true" spellcheck="false">Restaurant La Vie</strong>
+          <span contenteditable="true" spellcheck="false">Ora 14:30</span>
+        </div>
+      </div>
+
+      <div class="parents">
+        <div><span>Parintii</span><strong contenteditable="true" spellcheck="false">Andreea &amp; Mihai</strong></div>
+        <div><span>Nasii</span><strong contenteditable="true" spellcheck="false">Ioana &amp; Radu</strong></div>
+      </div>
+
+      <div class="rsvp">
+        <span>Va rugam sa confirmati prezenta</span>
+        <strong contenteditable="true" spellcheck="false">07xx xxx xxx</strong>
+      </div>
+      <p class="edit-note">Apasa pe text pentru a-l personaliza</p>
+      <button class="print-button" type="button" onclick="window.print()">Tipareste invitatia</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
